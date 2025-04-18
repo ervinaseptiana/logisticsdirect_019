@@ -1,0 +1,97 @@
+        // foreach ($sheet as $index => $row) {
+        //     if ($index === 0) continue; // Skip header
+    
+        //     $partNo = $conn->real_escape_string($row[0]);
+        //     $qty = (int)$row[1];
+        //     $length = (float)$row[2];
+        //     $width = (float)$row[3];
+        //     $height = (float)$row[4];
+    
+        //     if (!empty($partNo) && $qty > 0 && $length > 0 && $width > 0 && $height > 0) {
+        //         $query = "INSERT INTO data_order_inventory (part_no, qty, l, w, h) VALUES ('$partNo', $qty, $length, $width, $height)";
+        //         $conn->query($query);
+        //     }
+        // }
+
+        // $queryTotalQty = "SELECT SUM(qty) AS total_qty FROM data_order_inventory";
+
+        // $resultTotalQty = $conn->query($queryTotalQty);
+    // if ($resultTotalQty && $resultTotalQty->num_rows > 0) {
+    //     $rowTotalQty = $resultTotalQty->fetch_assoc();
+    //     $totalQty = $rowTotalQty['total_qty'] ?? 0;
+    // }
+
+    <!-- 
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h3 class="text-black">Tabel Data</h3>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table id="dataTable" class="table table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No</th>
+                                    <th>Part No</th>
+                                    <th>Part Name</th>
+                                    <th>From</th>
+                                    <th>ECI No</th>
+                                    <th>Packing</th>
+                                    <th>QTY</th>
+                                    <th>Length (L)</th>
+                                    <th>Width (W)</th>
+                                    <th>Height (H)</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> -->
+
+            // $(document).ready(function () {
+                //     $('#dataTable').DataTable({
+                //         paging: true,
+                //         scrollX: true,
+                //         responsive: true,
+                //         autoWidth: false,
+                //         language: {
+                //             paginate: {
+                //                 previous: "Sebelumnya",
+                //                 next: "Berikutnya"
+                //             },
+                //             search: "Cari:",
+                //             lengthMenu: "Tampilkan _MENU_ data",
+                //             info: "Menampilkan _START_ hingga _END_ dari _TOTAL_ data",
+                //             zeroRecords: "Data tidak ditemukan",
+                //             infoEmpty: "Tidak ada data tersedia",
+                //             infoFiltered: "(disaring dari total _MAX_ data)"
+                //         }
+                //     });
+                // });
+
+                // foreach ($data as $row) {
+                //     $date = !empty($row[9]) ? $row[9] : date('Y-m-d'); // Gunakan tanggal hari ini jika kosong
+                //     $stmt = $conn->prepare("INSERT INTO msp_order_inventory (rec_area_code, part_no, part_name, uniq, type, l, w, h, pcs_kbn, qty_ord_pcs, qty_ord_kbn, date) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                //     $stmt->bind_param(
+                //         "sssssiissiii", 
+                //         $row[0], $row[1], $row[2], $row[3], $row[4], $row[5], 
+                //         $row[6], $row[7], $row[8], $row[9], $row[10], $date
+                //     );
+                //     $stmt->execute();
+                // }
+                
+                    // foreach ($data as $row) {
+                    //     $date = !empty($row[9]) ? $row[9] : date('Y-m-d'); // Gunakan tanggal hari ini jika kosong
+                    //     $stmt = $conn->prepare("INSERT INTO data_order_inventory (`part_no`, `part_name`, `from`, `eci_no`, `packing`, `qty`, `l`, `w`, `h`, `date`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+                    //     $stmt->bind_param(
+                    //         "sssssissss", 
+                    //         $row[0], $row[1], $row[2], $row[3], $row[4], $row[5], 
+                    //         $row[6], $row[7], $row[8], $date
+                    //         );
+                    //     $stmt->execute();
+                    // }
+                    
